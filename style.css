@@ -1,0 +1,50 @@
+.gridItem
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+
+}
+
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 500px;
+    height: 500px;
+    margin: 0 auto 2rem auto;
+    border: solid black 5px;
+}
+body{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item--color
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#buttons
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-content: space-between;
+   margin-left: 50px;
+   width: auto;
+   margin-right: -100px;
+   margin-bottom: 100px;
+   margin-top: 100px;
+}
+
+.buttonItem
+{
+    width: 60px;
+    height: 50px;
+    text-align: center;
+
+}
