@@ -16,11 +16,13 @@
     height: 500px;
     margin: 0 auto 2rem auto;
     border: solid black 5px;
+    box-shadow: 0 0 20px saddlebrown;
 }
 body{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    background-color: rgba(20,80,20,0.6);
 }
 
 .item--color
@@ -39,6 +41,7 @@ body{
    margin-right: -100px;
    margin-bottom: 100px;
    margin-top: 100px;
+   
 }
 
 .buttonItem
@@ -46,5 +49,37 @@ body{
     width: 60px;
     height: 50px;
     text-align: center;
-
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    
 }
+.image
+{
+    margin-top: 100px;
+}
+
+.buttonItem:hover
+{
+    background-color: gold;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px khaki;
+    cursor: pointer;
+}
+.glow
+{
+    color: red;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow
+{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }

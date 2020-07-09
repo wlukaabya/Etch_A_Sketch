@@ -5,6 +5,7 @@ let squares;
 const resetButton = document.getElementById('reset');
 const addGrid = document.getElementById('addGrid')
 const addColorf = document.getElementById('addColor')
+const darkGrid = document.getElementById('opacfil')
 
 //this is a function that draws grids.
 function drawGrid(numCells=16)
@@ -42,6 +43,4 @@ function putGrid()
 
 addGrid.addEventListener('click',putGrid)
 
-addColorf.addEventListener('click',addColorMode);
 
-  drawGrid(3);
